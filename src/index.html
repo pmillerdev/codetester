@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--Welcome to the Code Tester source! Created by Peter Miller-->
+<html>
+    <head>
+        <title>Code Tester</title>
+        <!--My styling-->
+        <link rel="stylesheet" type="text/css" href="codetester.css">
+    </head>
+    <body>
+        <!--Top bar-->
+        <div id="header">
+            <!--Title-->
+            <div id="logo">
+                Code Tester
+            </div>
+            <!--Interactive buttons-->
+            <div id="buttonContainer">
+                <div class="toggleButton active" id="html">HTML</div>
+                <div class="toggleButton" id="css">CSS</div>
+                <div class="toggleButton" id="javascript">JavaScript</div>
+                <div class="toggleButton active" id="output">Output</div>
+            </div>
+        </div>
+        <!--Main body containing the four panels-->
+        <div id="bodyContainer">
+            <!--HTML area-->
+            <textarea id="htmlPanel" class="panel"><p id="paragraph">Hello World!</p></textarea>
+            <!--CSS area-->
+            <textarea id="cssPanel" class="panel hidden">p { color: green; }</textarea>
+            <!--JS area-->
+            <textarea id="javascriptPanel" class="panel hidden">
+                document.getElementById("paragraph").innerHTML = "Welcome to Code Tester! The html text has been altered by CSS & JavaScript.";
+            </textarea>
+            <!--iframe for the output-->
+            <iframe id="outputPanel" class="panel"></iframe>
+        </div>
+        <!--jQuery script-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <!-- My JS and jQuery-->
+        <script type="text/javascript" src="codetester.js"></script>
+    </body>
+</html>
