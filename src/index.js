@@ -1,5 +1,5 @@
-//Welcome to the javascript for the codetester page.
-//Most of the interactivity was created using jQuery.
+/*Welcome to the javascript for the codetester page.
+Most of the interactivity was created using jQuery.*/
 
 //Function that updates the output iframe based on what is inside the text areas.
 function updateOutput() {
@@ -19,7 +19,7 @@ $(".toggleButton").hover(function() {
     $(this).removeClass("highlightedButton");
 });
 
-//on-click function for the buttons.
+//On-click function for the buttons.
 $(".toggleButton").click(function() {
     //Make the button active.
     $(this).toggleClass("active");
