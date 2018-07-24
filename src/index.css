@@ -4,12 +4,16 @@ body {
     font-family: sans-serif;
     padding:0;
     margin:0;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color:#333;
 }
 
 #header {
     width:100%;
-    background-color: #EEEEEE;
-    padding:5px;
+    background-color: #222;
+    color: white;
+    padding: 10px;
     height: 30px;
 }
 
@@ -21,13 +25,13 @@ body {
 }
 
 #buttonContainer {
-    width:233px;
+    width: 233px;
     margin: 0 auto;
 }
 
 .toggleButton {
     float:left;
-    border: 1px solid grey;
+    border: 1px solid #333;
     padding: 6px;
     border-right: none;
     font-size: 90%;
@@ -41,21 +45,25 @@ body {
 #output {
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
-    border-right: 1px solid grey;
 }
 
 .active {
-    background-color: #E8F2FF;
+    background-color: #5cb85c;
 }
 
 .highlightedButton {
-    background-color: grey;
+    background-color: #777;
 }
 
 textarea {
+    padding-left: 5px;
+    padding-right: 5px;
     resize: none;
     border-top: none;
-    border-color: grey;
+    border-bottom: none;
+    border-color: #222;
+    background-color: #333;
+    color: white;
 }
 
 .panel {
@@ -65,7 +73,7 @@ textarea {
 }
 
 iframe {
-    border:none;
+    border: none;
 }
 
 .hidden {
