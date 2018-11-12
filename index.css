@@ -35,6 +35,7 @@ body {
     padding: 6px;
     border-right: none;
     font-size: 90%;
+    cursor: pointer;
 }
 
 #html {
